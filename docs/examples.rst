@@ -6,7 +6,7 @@ Split an image
 
 Save tiles to the same directory as the image using the original filename as a prefix:
 .. code-block:: python
-   :emphasize-lines: 3
+   :emphasize-lines: 2
 
 	>>> import image_slicer
 	>>> image_slicer.slice('cake.jpg', 4)
@@ -18,7 +18,7 @@ Split an Image into a specified width and height box
 If you wish to split the image into a specified height and width tile, given the specified height and width divide it evenly,
 you can do so by specifiying the height and width of the tile
 .. code-block:: python
-   :emphasize-lines: 2
+   :emphasize-lines: 1
 
 	>>> import image_slicer
 	>>> image_slicer.slice('cake.jpg', 4, tile_w=150, tile_h=125)
