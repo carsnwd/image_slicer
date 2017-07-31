@@ -5,9 +5,8 @@ Split an image
 ~~~~~~~~~~~~~~
 
 Save tiles to the same directory as the image using the original filename as a prefix:
-
 .. code-block:: python
-   :emphasize-lines: 2
+   :emphasize-lines: 3
 
 	>>> import image_slicer
 	>>> image_slicer.slice('cake.jpg', 4)
