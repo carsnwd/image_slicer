@@ -13,6 +13,17 @@ Save tiles to the same directory as the image using the original filename as a p
 	>>> image_slicer.slice('cake.jpg', 4)
 	(<Tile #1 - cake_01_01.png>, <Tile #2 - cake_01_02.png>, <Tile #3 - cake_02_01.png>, <Tile #4 - cake_02_02.png>)
 
+Split an Image into a specified width and height box
+~~~~~~~~~~~~~~
+
+If you wish to split the image into a specified height and width tile, given the specified height and width divide it evenly,
+you can do so by specifiying the height and width of the tile
+.. code-block:: python
+   :emphasize-lines: 2
+
+	>>> import image_slicer
+	>>> image_slicer.slice('cake.jpg', 4, tile_w=150, tile_h=125)
+
 Control tile saving
 ~~~~~~~~~~~~~~~~~~~
 
